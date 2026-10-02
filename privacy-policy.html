@@ -9,35 +9,39 @@
         body { max-width: 760px; margin: 0 auto; padding: 24px; color: #1f2937; line-height: 1.65; }
         h1, h2 { color: #065f46; }
         h1 { line-height: 1.2; }
-        .notice { padding: 12px 14px; border-left: 4px solid #f59e0b; background: #fffbeb; }
         code { overflow-wrap: anywhere; }
     </style>
 </head>
 <body>
     <h1>Kebijakan Privasi Ruang SKI</h1>
-    <p>Terakhir diperbarui: 6 September 2026</p>
-    <p>Ruang SKI adalah aplikasi pembelajaran Sejarah Kebudayaan Islam untuk membantu pengguna mempelajari materi, mengerjakan kuis, menyimpan progres, dan menggunakan fitur sosial di dalam aplikasi.</p>
-
-    <div class="notice"><strong>Penting:</strong> sebelum dipublikasikan, ganti alamat kontak di bawah dengan alamat email pengembang yang aktif. Publikasikan halaman ini pada URL HTTPS yang dapat dibuka tanpa login.</div>
+    <p>Terakhir diperbarui: 1 Oktober 2026</p>
+    <p>Ruang SKI adalah aplikasi pembelajaran Sejarah Kebudayaan Islam untuk pengguna berusia 13 tahun ke atas. Kebijakan ini menjelaskan data yang diproses saat Anda menggunakan akun, materi, chat, pembelian, dan iklan.</p>
 
     <h2>Data yang diproses</h2>
     <ul>
         <li><strong>Data akun:</strong> nama tampilan, alamat email, dan identitas akun dari login email atau Google.</li>
         <li><strong>Data profil:</strong> jenis kelamin dan pilihan profil yang pengguna simpan.</li>
         <li><strong>Data aktivitas aplikasi:</strong> progres materi, skor kuis, level, koin virtual, avatar, judul, bingkai, dan waktu aktivitas.</li>
-        <li><strong>Data komunikasi:</strong> pesan yang pengguna kirim pada chat global atau chat pribadi, termasuk metadata yang diperlukan agar pesan dapat ditampilkan.</li>
-        <li><strong>Data perangkat dan penggunaan:</strong> data teknis yang dapat diproses oleh Firebase, Google Play Billing, dan Google Mobile Ads untuk menjalankan autentikasi, pembayaran, keamanan, analitik layanan, dan iklan. Detail akhir mengikuti konfigurasi layanan pihak ketiga yang aktif.</li>
-        <li><strong>Data lokal:</strong> preferensi, progres, pengaturan notifikasi, dan data permainan yang disimpan pada perangkat menggunakan penyimpanan lokal aplikasi.</li>
+        <li><strong>Data komunikasi:</strong> isi dan metadata pesan chat global/pribadi, stiker, serta laporan pesan. Laporan mencakup alasan laporan, ID akun pelapor dan akun yang dilaporkan, salinan teks/stiker yang dilaporkan, jenis pesan, status, dan waktu laporan.</li>
+        <li><strong>Data iklan dan consent:</strong> Google Mobile Ads dan Google User Messaging Platform dapat memproses pengenal perangkat/iklan, informasi perangkat, dan pilihan consent sesuai konfigurasi iklan serta wilayah Anda.</li>
+        <li><strong>Data perangkat dan penggunaan:</strong> data teknis yang dapat diproses Firebase, Google Play Billing, Google Sign-In, Google Mobile Ads, dan Google User Messaging Platform untuk autentikasi, sinkronisasi, keamanan, pembayaran, dan iklan.</li>
+        <li><strong>Data lokal:</strong> bahasa, preferensi, progres, pengaturan notifikasi, dan data permainan yang disimpan pada perangkat.</li>
     </ul>
 
     <h2>Tujuan penggunaan</h2>
-    <p>Data digunakan untuk membuat dan mengamankan akun, menyinkronkan progres, menyediakan chat, memproses pembelian koin virtual, menampilkan iklan berhadiah, mengirim pengingat belajar apabila diaktifkan, memperbaiki layanan, dan memenuhi kewajiban hukum.</p>
+    <p>Data digunakan untuk membuat dan mengamankan akun, menyinkronkan progres, menyediakan chat, meninjau laporan keselamatan, memproses pembelian koin virtual, menampilkan iklan sesuai consent, mengirim pengingat belajar apabila diaktifkan, memperbaiki layanan, dan memenuhi kewajiban hukum.</p>
+
+    <h2>Chat dan laporan keselamatan</h2>
+    <p>Pesan global dapat dilihat pengguna lain yang masuk ke aplikasi; pesan pribadi hanya ditujukan kepada peserta percakapan. Anda dapat memblokir pengguna dan melaporkan pesan. Teks pesan yang dilaporkan dapat diperiksa otomatis untuk mendeteksi pelanggaran yang cocok dengan alasan laporan. Pesan global atau pribadi hanya dihapus otomatis jika pemeriksaan memberi hasil pelanggaran yang tegas dan sesuai; hasil lain diteruskan untuk pemeriksaan manual. Salinan laporan tetap disimpan untuk peninjauan keselamatan. Jangan kirim informasi sensitif melalui chat.</p>
 
     <h2>Pihak ketiga</h2>
-    <p>Aplikasi menggunakan Google Firebase Authentication dan Firestore, Google Sign-In, Google Play Billing, serta Google Mobile Ads. Masing-masing layanan dapat memproses data sesuai kebijakan privasinya sendiri. Pembayaran diproses oleh Google Play; Ruang SKI tidak menerima atau menyimpan nomor kartu pembayaran.</p>
+    <p>Aplikasi menggunakan Google Firebase Authentication dan Firestore, Google Sign-In, Google Play Billing, Google Mobile Ads, serta Google User Messaging Platform. Chat dilayani backend Cloudflare Worker yang mengakses Firestore untuk mengirim pesan dan menyimpan laporan. Untuk pemeriksaan otomatis, teks pesan yang dilaporkan dapat diproses oleh Cloudflare Workers AI; laporan dan salinan pesan tetap tersedia bagi pengelola untuk review manual. Layanan tersebut dapat memproses data sesuai kebijakan privasinya masing-masing. Pembayaran diproses Google Play; Ruang SKI tidak menerima atau menyimpan nomor kartu pembayaran.</p>
+
+    <h2>Iklan dan pilihan privasi</h2>
+    <p>Formulir consent Google dapat ditampilkan sebelum iklan dimuat. Anda dapat membuka Opsi Privasi Iklan melalui Pengaturan jika opsi tersebut tersedia. Ketersediaan dan personalisasi iklan mengikuti pilihan consent, wilayah, serta pengaturan Google yang berlaku.</p>
 
     <h2>Penyimpanan dan penghapusan</h2>
-    <p>Data lokal dapat dihapus dengan menghapus data aplikasi. Data akun dan data cloud dapat diminta untuk diakses atau dihapus dengan menghubungi kami. Kami dapat menyimpan data selama diperlukan untuk menyediakan layanan, keamanan, penyelesaian transaksi, dan kewajiban hukum.</p>
+    <p>Data lokal dapat dihapus dengan menghapus data aplikasi. Data akun dan data cloud dapat diminta untuk diakses atau dihapus dengan menghubungi kami. Laporan dan salinan pesan disimpan selama diperlukan untuk peninjauan keselamatan, keamanan layanan, penyelesaian permintaan, atau kewajiban hukum.</p>
 
     <h2>Permintaan penghapusan akun</h2>
     <p>Pengguna dapat meminta penghapusan akun dan data terkait dengan mengirim email ke <a href="mailto:alikhaidir052@gmail.com?subject=Permintaan%20Penghapusan%20Akun%20Ruang%20SKI">alikhaidir052@gmail.com</a> menggunakan alamat email yang terhubung dengan akun Ruang SKI.</p>
@@ -46,10 +50,10 @@
         <li>Sertakan nama pengguna dan alamat email akun yang ingin dihapus.</li>
         <li>Jangan kirim kata sandi atau informasi pembayaran.</li>
     </ol>
-    <p>Setelah permintaan diverifikasi, akun dan data cloud terkait akan dihapus, kecuali data yang wajib disimpan untuk keamanan, penyelesaian transaksi, atau kewajiban hukum. Penghapusan data lokal dilakukan dengan menghapus data aplikasi dari perangkat.</p>
+    <p>Setelah permintaan diverifikasi, akun dan data cloud terkait akan ditinjau untuk dihapus, kecuali data yang wajib disimpan untuk keamanan, penyelesaian transaksi, atau kewajiban hukum. Penghapusan data lokal dilakukan dengan menghapus data aplikasi dari perangkat.</p>
 
-    <h2>Anak-anak</h2>
-    <p>Ruang SKI ditujukan untuk pelajar. Penggunaan oleh anak harus dilakukan dengan sepengetahuan dan pengawasan orang tua atau wali. Kami tidak meminta anak memberikan data pribadi yang tidak diperlukan. Jika orang tua atau wali menemukan data anak yang perlu dihapus, silakan hubungi kami.</p>
+    <h2>Usia</h2>
+    <p>Ruang SKI ditujukan untuk pengguna berusia 13 tahun ke atas. Jika Anda mengetahui pengguna di bawah 13 tahun telah menggunakan layanan, hubungi kami agar kami dapat meninjau permintaan tersebut.</p>
 
     <h2>Keamanan</h2>
     <p>Kami menerapkan kontrol teknis dan administratif yang wajar. Tidak ada metode transmisi atau penyimpanan yang dapat dijamin 100 persen aman.</p>
